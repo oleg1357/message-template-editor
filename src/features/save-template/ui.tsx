@@ -14,14 +14,13 @@ export const SaveTemplate: FC<SaveTemplateProps> = ({ template, callbackSave }) 
   const onSave = () => {
     try {
       callbackSave(template)
-      if (timeoutId) clearTimeout(timeoutId) // очищаем таймаут если он есть
+      if (timeoutId) clearTimeout(timeoutId) // очищаем таймаут
       setMessage('Template successfully saved')
     } catch {
       setMessage('Something went wrong')
     } finally {
       setTimeoutId(
         setTimeout(() => {
-          //через 3 секунды очищаем сообщение для того чтобы показать следующее в случае повторного нажатия на кнопку
           setMessage('')
         }, 3000)
       )
