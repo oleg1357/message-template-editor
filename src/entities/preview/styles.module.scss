@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  padding: 1rem;
+
+  word-wrap: break-word;
+  white-space: pre-wrap;
+
+  border: 2px solid var(--color-dark-500);
+  border-radius: 5px;
+}

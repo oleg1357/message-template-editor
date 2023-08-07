@@ -1,0 +1,12 @@
+.container {
+  padding: 1rem;
+  color: var(--color-light-100);
+  background-color: var(--color-dark-500);
+  border-radius: 5px;
+}
+
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

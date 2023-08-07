@@ -1,0 +1,12 @@
+.button {
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+
+  font-size: var(--font-size-s);
+
+  background-color: var(--color-dark-300);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}

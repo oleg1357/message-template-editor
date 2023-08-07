@@ -1,0 +1,30 @@
+.message {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 10px;
+
+  color: var(--color-dark-900);
+
+  background-color: var(--color-light-100);
+  border: 1px solid var(--color-light-300);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+
+  animation: slide-down 0.3s ease-out forwards;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}

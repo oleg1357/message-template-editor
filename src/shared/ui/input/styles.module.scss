@@ -1,0 +1,19 @@
+.input {
+  cursor: default;
+
+  padding: 0.5rem;
+
+  font-size: var(--font-size-s);
+  color: var(--color-dark-900);
+
+  background-color: var(--color-dark-100);
+  border: 2px solid var(--color-dark-700);
+  border-radius: 5px;
+  outline: none;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-xs);
+}
